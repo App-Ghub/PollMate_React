@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+button {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.bar {
+  background-color: #007bff;
+  color: white;
+  height: 20px;
+  text-align: center;
+}
