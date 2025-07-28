@@ -1,4 +1,13 @@
 const express = require('express');
 const app = express();
-app.get('/', (req, res) => res.send('PollMate API'));
-app.listen(5000, () => console.log('Server running on port 5000'));
+const userRoutes = require('./routes/userRoutes');
+
+app.use(express.json());
+
+// Use Routes
+app.use('/api/users', userRoutes);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
